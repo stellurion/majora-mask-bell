@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Audio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Hi EVGE :0</p>
+    <button onclick="playAudio()">🔔</button>
+    <audio id="audio" src="mm_clocktower_bell.mp3"></audio>
+    
+    <script>
+        function playAudio() {
+            let audio = new Audio('mm_clocktower_bell.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
